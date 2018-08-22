@@ -16,6 +16,17 @@ h1 {
   font-weight: 900;
   line-height: 60px;
   padding-bottom: 56px;
+  padding-left: 0px;
+  margin-top: -35px;
+}
+
+h2 {
+  color: #00756F;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 60px;
+  padding-bottom: 56px;
+  padding-left: 0px;
   margin-top: -35px;
 }
 
@@ -63,8 +74,32 @@ h1 {
   margin-top: -300px;
 }
 
+.special-underline-method {
+  height: 24px;
+  background-color: #F0B916;
+  margin-top: -400px;
+}
+
+.special-underline-method-2 {
+  height: 24px;
+  background-color: #F0B916;
+  margin-top: -80px;
+}
+
+.special-underline-profile {
+  height: 24px;
+  background-color: #F0B916;
+  margin-top: 80px;
+}
+
 .main-info {
   padding-top: 150px;
+}
+
+.contact-info {
+  margin-top: 40px;
+  line-height: 40px;
+  margin-bottom: 104px;
 }
 
 .content-presentation {
@@ -93,7 +128,7 @@ h1 {
   border: 1px solid #00756F;
   border-radius: 6px;
   color: #00756F;
-  margin-left: 50px;
+  margin-top: -150px;
   padding: 12px 56px;
   font-weight: 600;
   background-color: #F0F0F0;
@@ -108,8 +143,30 @@ h1 {
 
 .display-frame{
   background-color: #F7F7F7;
-  height: 378px;
-  width: 378px;
+  height: 440px;
+  margin-top: 140px;
+  z-index: 1;
+}
+
+.display-frame-method{
+  background-color: #F7F7F7;
+  height: 136px;
+  margin-top: 16px;
+  z-index: 1;
+}
+
+.display-frame-method-1{
+  background-color: #F7F7F7;
+  height: 136px;
+  margin-top: 140px;
+  z-index: 1;
+}
+
+.display-frame-profile{
+  display: flex;
+  justify-content: center;
+  background-color: #F7F7F7;
+  height: 440px;
   margin-top: 140px;
   z-index: 1;
 }
@@ -124,6 +181,52 @@ h1 {
 }
 
 .project-display {
-  width: 350px;
+  width: 450px;
   margin-top: 50px;
+}
+
+.project-display-2 {
+  height: 330px;
+  margin-left: 140px;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+.project-display-3 {
+  height: 96px;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+.profile-display {
+  width: 400px;
+  height: 400px;
+  margin-top: 16px;
+}
+
+.tools {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tools-display {
+  height: 64px;
+  margin-top: 56px;
+  margin-bottom: 16px;
+}
+
+.tools-display-flinto {
+  height: 96px;
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+
+.title-method {
+  margin-top: -104px;
+  margin-left: 16px;
+}
+
+.title-method-2 {
+  margin-top: -104px;
+  margin-left: 216px;
 }
