@@ -16,7 +16,7 @@ h1 {
   font-weight: 900;
   line-height: 60px;
   padding-bottom: 56px;
-  padding-left: 0px;
+  padding-left: 0px !important;
   margin-top: -35px;
 }
 
