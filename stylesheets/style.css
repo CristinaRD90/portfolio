@@ -1,7 +1,7 @@
 body {
   font-family: 'Muli', sans-serif;
   font-weight: 200;
-  color: #2A3333;
+  color: #1C2120;
   font-size: 20px;
   line-height: 30px;
 }
@@ -13,7 +13,7 @@ a:-webkit-any-link {
 
 h1 {
   font-size: 50px;
-  font-weight: 900;
+  font-weight: 800;
   line-height: 60px;
   padding-bottom: 56px;
   padding-left: 0px !important;
@@ -21,9 +21,9 @@ h1 {
 }
 
 h2 {
-  color: #00756F;
+  color: #1C2120;
   font-size: 24px;
-  font-weight: 900;
+  font-weight: 800;
   line-height: 60px;
   padding-bottom: 56px;
   padding-left: 0px;
@@ -31,8 +31,8 @@ h2 {
 }
 
 .logotype {
-  font-weight: 900;
-  color: #00756F;
+  font-weight: 800;
+  color: #2A3333;
 }
 
 .col-md-auto {
@@ -43,11 +43,9 @@ h2 {
 }
 
 .main-background{
-  background-color: #F0F0F0;
-  height: 92vh;
-  width: 96vw;
-  margin-left: 4vh;
-  margin-top: 4vh;
+  background-color: #F0B916;
+  height: 100vh;
+  width: 100vw;
 }
 
 .nav-menu {
@@ -64,7 +62,7 @@ h2 {
 
 .special-underline {
   height: 24px;
-  background-color: #F0B916;
+  background-color: #FCFCFC;
   margin-bottom: -350px;
 }
 
@@ -229,4 +227,9 @@ h2 {
 .title-method-2 {
   margin-top: -104px;
   margin-left: 216px;
+}
+
+.icon{
+  height: 56px;
+  margin-top: 64px;
 }
