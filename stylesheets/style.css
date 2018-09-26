@@ -11,13 +11,55 @@ a:-webkit-any-link {
   color: inherit;
 }
 
+.scroll-downs {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-top: 464px;
+  padding-left: 15px;
+  width :34px;
+  height: 55px;
+}
+.mousey {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid #1C2120;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #1C2120;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% { opacity: 0; }
+  10% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(15px); opacity: 0;}
+}
+
 h1 {
   font-size: 50px;
   font-weight: 800;
   line-height: 60px;
-  padding-bottom: 56px;
-  padding-left: 0px !important;
+  padding-bottom: 32px;
   margin-top: -35px;
+}
+
+.main-title h1{
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 75px;
+  padding-bottom: 32px;
 }
 
 h2 {
@@ -48,6 +90,18 @@ h2 {
   width: 100vw;
 }
 
+.secondary-background{
+  background-color: #FFF;
+  height: 100vh;
+  width: 100vw;
+}
+
+.third-background{
+  background-color: #FFF;
+  height: 50vh;
+  width: 100vw;
+}
+
 .nav-menu {
   padding-top: 24px;
 }
@@ -56,42 +110,96 @@ h2 {
   padding-bottom: 20px;
 }
 
-.presentation-image {
-  height: 70vh;
+.project-title {
+  margin-left: -24px;
+  margin-top: 24px;
 }
 
 .special-underline {
   height: 24px;
+  width: 100%;
   background-color: #FCFCFC;
-  margin-bottom: -350px;
+  margin-top: 136px;
+  animation-name: underline;
+  animation-duration: 4s;
 }
 
-.special-underline-projects {
-  height: 24px;
-  background-color: #F0B916;
-  margin-top: -300px;
+@keyframes underline {
+    0% {width: 0%;}
+    100% {width: 100%;}
 }
 
-.special-underline-method {
+.special-underline-project {
   height: 24px;
-  background-color: #F0B916;
-  margin-top: -400px;
+  background-color: none;
+  margin-top: 200px;
+  text-align: right;
+  transition: all 0.1s ease-in-out 0s;
 }
 
-.special-underline-method-2 {
+.special-underline-project:hover {
   height: 24px;
   background-color: #F0B916;
-  margin-top: -80px;
+  text-align: right;
+}
+
+.special-underline-project-right {
+  height: 24px;
+  background-color: none;
+  margin-top: 200px;
+  transition: all 0.1s ease-in-out 0s;
+}
+
+.special-underline-project-right:hover {
+  height: 24px;
+  background-color: #F0B916;
 }
 
 .special-underline-profile {
   height: 24px;
-  background-color: #F0B916;
-  margin-top: 80px;
+  background-color: #FFF;
+  margin-top: -580px;
+  transition: all 0.1s ease-in-out 0s;
+  text-align: right;
 }
 
-.main-info {
-  padding-top: 150px;
+.special-underline-profile:hover {
+  height: 24px;
+  background-color: #F0B916;
+  margin-top: -580px;
+  text-align: right;
+}
+
+.special-underline-profile-2 {
+  height: 24px;
+  background-color: #FFF;
+  margin-top: -304px;
+  transition: all 0.1s ease-in-out 0s;
+  text-align: right;
+}
+
+.special-underline-profile-2:hover {
+  height: 24px;
+  background-color: #F0B916;
+  margin-top: -304px;
+  text-align: right;
+}
+
+.project-display {
+  margin-top: -80px;
+  height: 70vh;
+  margin-left: -104px;
+}
+
+.project-display-mobile {
+  margin-top: 96px;
+  margin-bottom: 96px;
+  height: 70vh;
+  margin-left: -456px;
+}
+
+.contact {
+  margin-top: 104px;
 }
 
 .contact-info {
@@ -105,35 +213,41 @@ h2 {
   padding-bottom: 50px;
 }
 
-.main-button {
-  border: 1px solid #00756F;
-  border-radius: 6px;
-  color: #00756F;
-  padding: 12px 56px;
-  margin-top: 16px;
-  font-weight: 600;
-  background-color: #F0F0F0;
-  transition: all 0.1s ease-in-out 0s;
-}
-
-.main-button:hover {
-  background-color: #00756F;
-  border: 1px solid #00756F;
-  color: #F0F0F0;
-}
-
 .secondary-button {
   border: 1px solid #00756F;
-  border-radius: 6px;
+  border-radius: 1px;
   color: #00756F;
-  margin-top: -150px;
-  padding: 12px 56px;
+  height: 56px;
+  padding: 8px 56px;
+  margin-top: 152px;
   font-weight: 600;
-  background-color: #F0F0F0;
+  background-color: rgba(255, 0, 0, 0);
+  width: 224px;
   transition: all 0.1s ease-in-out 0s;
 }
 
 .secondary-button:hover {
+  background-color: #00756F;
+  border: 1px solid #00756F;
+  color: #F0F0F0;
+  width: 224px;
+}
+
+.secondary-button-right {
+  border: 1px solid #00756F;
+  border-radius: 1px;
+  color: #00756F;
+  height: 56px;
+  padding: 8px 56px;
+  margin-top: 152px;
+  margin-left: 15px;
+  font-weight: 600;
+  background-color: rgba(255, 0, 0, 0);
+  width: 224px;
+  transition: all 0.1s ease-in-out 0s;
+}
+
+.secondary-button-right:hover {
   background-color: #00756F;
   border: 1px solid #00756F;
   color: #F0F0F0;
@@ -178,28 +292,10 @@ h2 {
   margin-top: 30px;
 }
 
-.project-display {
-  width: 450px;
-  margin-top: 50px;
-}
-
-.project-display-2 {
-  height: 330px;
-  margin-left: 140px;
-  margin-top: 24px;
-  margin-bottom: 16px;
-}
-
-.project-display-3 {
-  height: 96px;
-  margin-top: 24px;
-  margin-bottom: 16px;
-}
-
 .profile-display {
-  width: 400px;
-  height: 400px;
-  margin-top: 16px;
+  height: 100vh;
+  margin-left: -144px;
+  margin-top: 40px;
 }
 
 .tools {
@@ -232,4 +328,11 @@ h2 {
 .icon{
   height: 56px;
   margin-top: 64px;
+  padding-left: 15px;
+}
+
+.special-underline-projects {
+  height: 24px;
+  background-color: #F0B916;
+  margin-top: -300px;
 }
